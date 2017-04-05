@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+
+<h1>Array!!</h1>
+
+<button onclick="myFunction()">Click me!!</button>
+
+<script type="text/javascript">
+
+/*
+function removeSpecificElement (array, elem) {
+var temp = [];
+for (var i in array) {
+if(array[i] !== elem) temp.push(array[i]);
+}
+return temp;
+}
+
+console.log(removeSpecificElement([2, 5, 9, 6, 7, 5, 4, 5, 5, 8, 5, 5], 5))
+*/
+//if (true) array = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110];
+//else array = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110];
+array = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110];
+ 
+ //if(array==true){
+ function removeElement(){
+
+
+
+array.shift(); 
+array.shift();
+array.shift(); 
+array.shift();
+document.write("New Array  = " + "[" + array + "]");
+}
+removeElement();
+
+
+
+
+function myFunction() {
+    array.unshift(array[1]);
+     array.unshift(array[1]);
+      array.unshift(array[1]);
+       array.unshift(array[1]);
+       document.write("New Array = " + "[" + array + "]");
+}
+
+
+/*function addElement{
+	newArray
+}
+*/
+
+var x;
+var y;
+
+function swap(x, y) {
+  return [y, x]
+}
+
+swap(5,10);
+document.write(swap(5,10));
+
+</script>
+
+</body>
+</html>
