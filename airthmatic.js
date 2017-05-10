@@ -1,63 +1,86 @@
 
 
-var x = 5;
-var y = 10;
+
 var res;
 
 
 
-function sum (){
+function sum (a,b){
     
-        res = x + y;
+        res = a + b;
         console.log(res);
     
 }
 
-function sub (){
+function sub (a,b){
     
-        res = x - y;
+        res = a - b;
         console.log(res);
     
 }
 
 
 
-function xPower(){
-   res = x ** 2;
+function xPower(a){
+   res = a ** 2;
 console.log(res);
     
 }
 
-function yPower(){
-   res = y ** 2;
+function yPower(b){
+   res = b ** 2;
    console.log(res);
     
 }
 
 
-function power(){
+function power(a,b){
     
-var sum = (x ** 2) + (y ** 2);
+var sum = (a ** 2) + (b ** 2);
 
  res = Math.sqrt(sum);
 console.log(res);
     
 }
 
-function multiplication(){
+function multiplication(a,b){
   
-    res = x * y;
+    res = a * b;
 
    console.log(res); 
 }
 
 
-sum();
-sub();
-multiplication();
-xPower();
-yPower();
-power();
+
+// function outPut (res){
+
+// 	console.log(res);
+// }
+
+
+// var sum = outPut(x+y);
+
+// var sub = outPut(x-y);
+
+// var multiplication = outPut(x*y);
+
+// var xPower = outPut(x ** 2);
+
+// var yPower = outPut(y ** 2);
+
+
+// var sum = (x ** 2) + (y ** 2);
+// var power = outPut(Math.sqrt(sum));
+
+
+
+
+sum(5,10);
+sub(5,10);
+multiplication(5,10);
+xPower(5);
+yPower(10);
+power(5,10);
 
 
 
