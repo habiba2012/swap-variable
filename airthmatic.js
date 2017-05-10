@@ -1,53 +1,50 @@
 
 
 
-var res;
 
 
 
-function sum (a,b){
+
+function add (a,b){
     
-        res = a + b;
-        console.log(res);
+        return a + b;
+        
     
 }
 
 function sub (a,b){
     
-        res = a - b;
-        console.log(res);
+        return a - b;
+        
     
 }
 
 
 
 function xPower(a){
-   res = a ** 2;
-console.log(res);
+   return a ** 2;
+
     
 }
 
-function yPower(b){
-   res = b ** 2;
-   console.log(res);
-    
-}
+var yPow = xPower(10);
 
 
 function power(a,b){
     
-var sum = (a ** 2) + (b ** 2);
+//var sum = (a ** 2) + (b ** 2);
+var sum = xPower(a) + xPower(b);
 
- res = Math.sqrt(sum);
-console.log(res);
+ return Math.sqrt(sum);
+
     
 }
 
 function multiplication(a,b){
   
-    res = a * b;
+    return a * b;
 
-   console.log(res); 
+   
 }
 
 
@@ -75,12 +72,15 @@ function multiplication(a,b){
 
 
 
-sum(5,10);
-sub(5,10);
-multiplication(5,10);
-xPower(5);
-yPower(10);
-power(5,10);
+console.log(add(5,10));
+console.log(sub(5,10));
+
+console.log(xPower(5));
+console.log(yPow);
+//power(5,10);
+console.log(multiplication(5,10));
+ console.log(power(5,10));
+
 
 
 
